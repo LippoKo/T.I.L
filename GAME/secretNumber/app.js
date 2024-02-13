@@ -6,6 +6,7 @@ let tentativas = 1;
 function exibirTexto(tag, text) {
     let campo = document.querySelector(tag);
     campo.innerHTML = text;
+    responsiveVoice.speak(text, 'Brazilian Portuguese Female', { rate: 1.2 });
 }
 
 function mensagemInicial() {
